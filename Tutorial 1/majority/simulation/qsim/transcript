@@ -1,0 +1,21 @@
+# do light.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 02:17:57 on Jan 20,2026
+# vlog -work work light.vo 
+# -- Compiling module light
+# 
+# Top level modules:
+# 	light
+# End time: 02:17:58 on Jan 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 02:17:58 on Jan 20,2026
+# vlog -work work output_files/Waveform.vwf.vt 
+# ** Error: (vlog-7) Failed to open design unit file "output_files/Waveform.vwf.vt" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 02:17:58 on Jan 20,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: c:/intelfpga/23.1std/questa_fe/win64/vlog failed.
+# Executing ONERROR command at macro ./light.do line 4

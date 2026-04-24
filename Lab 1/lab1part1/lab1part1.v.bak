@@ -1,0 +1,133 @@
+module lab1part1(
+    input  wire clk,
+    input  wire reset,
+    input  wire enable,
+    input  wire d,
+    input  wire sel0,
+    input  wire sel1,
+    input  wire data0,
+    input  wire data1,
+    input  wire data2,
+    input  wire data3,
+    output wire mux_out,
+    output wire q,
+    output wire [3:0] count_out
+);
+
+    // D flip-flop with active-low reset and enable
+    d_ff_active_low_reset_enable u_ff (
+        .clk(clk),
+        .reset(reset),
+        .enable(enable),
+        .d(d),
+        .q(q)
+    );
+
+    // 4-to-1 mux
+    four_to_one_mux u_mux (
+        .data0(data0),
+        .data1(data1),
+        .data2(data2),
+        .data3(data3),
+        .sel0(sel0),
+        .sel1(sel1),
+        .data_out(mux_out)
+    );
+
+    // Counter
+    counter u_counter (
+        .clk(clk),
+        .reset(reset),
+        .enable(enable),
+        .count_out(count_out)
+    );
+
+endmodule
+
+module d_ff (
+	input wire clk,
+	input wire d,
+	output reg q
+	
+);always @(posedge clk) begin
+		q <= d;
+	end 
+endmodule
+
+module d_ff_active_low_reset(
+	input wire clk,
+	input wire reset,
+	input wire d,
+	output reg q
+		
+); always @(posedge clk) begin
+		if(!reset) 
+			q <= 0;
+		else 
+			q <= d;
+	end
+endmodule
+
+module d_ff_active_low_reset_enable (
+	input wire clk,
+	input wire reset,
+	input wire enable,
+	input wire d,
+	output reg q
+
+); always @(posedge clk) begin
+		if (!reset) 
+			q <= 0;
+		else if (enable)
+			q <= d;
+		else
+			q <= q;
+	end
+endmodule
+		
+module d_latch_sync_enable_ctrl(
+	input wire en,
+	input wire clk,
+	input wire d,
+	output reg q
+); 
+	reg en_ctrl;
+	//sync enable control
+	always @(posedge clk) begin
+		en_ctrl <= en;
+	end
+	//feed to latch
+	always @(*) begin
+			if (en_ctrl)
+				q = d;
+	end
+endmodule 
+
+module four_to_one_mux(
+	input wire data0,
+	input wire data1,
+	input wire data2,
+	input wire data3,
+	input wire sel0,
+	input wire sel1,
+	output wire data_out
+);	assign data_out = (!sel1 && !sel0) ? data0 : 
+							(!sel1 &&  sel0) ? data1 : 
+							(sel1 &&  !sel0) ? data2 : 
+													 data3;
+													 
+endmodule 
+
+module counter(
+	input wire clk,
+	input wire reset,
+	input wire enable,
+	output reg [3:0] count_out
+); always @(posedge clk) begin
+		if (reset == 1'b1) 
+			count_out <= 4'b0000;
+		else if (enable == 1'b1) 
+			count_out <= count_out + 1;
+	end
+endmodule
+			

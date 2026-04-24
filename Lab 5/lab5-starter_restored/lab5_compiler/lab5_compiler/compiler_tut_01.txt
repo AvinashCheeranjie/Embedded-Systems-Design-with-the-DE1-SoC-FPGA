@@ -1,0 +1,41 @@
+; Welcome to compiler tutorial #1
+
+; Syntax:
+; 1. Semicolon's are comments, anything after a Semicolon 
+;    will be ignored during compilation
+; 2. All instructions start with an instruction name, in
+;    all caps. We currently support the following instructions:
+;    BR,BRZ,ADDI,SUBI,SR0,SRH0,CLR,MOV,MOVA,MOVR,MOVRHS,PAUSE
+; 3. Immediate constants are preceded by a pound, #
+; 4. Register adresses are preceded by the letter r
+; 5. Instruction parameters can be separated by a space, comma
+;    or both. The compiler is not that fussy
+; 6. Only one instruction is allowed per line
+
+; Let's see some code
+
+CLR r0          ; clear Register 0 on start
+CLR r1          ; clear Register 1 on start
+
+SR0 #10         ; Set lower half of Register 0 to b1010
+MOV r1 r0       ; Move the Register 0 to Register 1
+
+MOVR r1         ; Move the motor by the value in Register 1
+PAUSE           ; Pause for 8/100's of a second
+PAUSE           ; Pause for 8/100's of a second
+MOVRHS r1       ; Move the motor half steps by the value in Register 1
+PAUSE           ; Pause for 8/100's of a second
+PAUSE           ; Pause for 8/100's of a second
+SUBI r0 #1      ; Subtract 1 from Register 0
+BRZ #2          ; If Register 0 is 0, jump forward 2 instructions
+BR #-8          ; Jump backward 8 instructions
+
+SR0 #8          ; Set lower half of Register 0 to b1000
+SRH0 #8         ; Set upper half of Register 0 to b1000
+                ; Register 0 is now equal to signed -120
+
+MOVRHS r0       ; Move the motor half steps by the value in Register 0
+
+
+; To Compile Me:
+; python compiler.py compiler_tut_01.txt

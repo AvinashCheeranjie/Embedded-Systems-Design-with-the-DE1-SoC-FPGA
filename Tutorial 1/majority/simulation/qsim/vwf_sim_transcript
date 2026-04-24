@@ -1,0 +1,184 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga/23.1std/questa_fe/win64/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off majority3 -c majority3 --vector_source="C:/Users/Win11/Desktop/Tutorial 1/Waveform.vwf" --testbench_file="C:/Users/Win11/Desktop/Tutorial 1/simulation/qsim/Waveform.vwf.vt"
+
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Standard Edition
+    Info: Copyright (C) 2024  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Jan 19 11:50:45 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off majority3 -c majority3 --vector_source="C:/Users/Win11/Desktop/Tutorial 1/Waveform.vwf" --testbench_file="C:/Users/Win11/Desktop/Tutorial 1/simulation/qsim/Waveform.vwf.vt"
+Info (119006): Selected device 5CSEMA5F31C6 for design "majority3"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Win11/Desktop/Tutorial 1/simulation/qsim/" majority3 -c majority3
+
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Standard Edition
+    Info: Copyright (C) 2024  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Jan 19 11:50:48 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Win11/Desktop/Tutorial 1/simulation/qsim/" majority3 -c majority3
+Info (119006): Selected device 5CSEMA5F31C6 for design "majority3"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file majority3.vo in folder "C:/Users/Win11/Desktop/Tutorial 1/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4758 megabytes
+    Info: Processing ended: Mon Jan 19 11:50:51 2026
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/Win11/Desktop/Tutorial 1/simulation/qsim/majority3.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga/23.1std/questa_fe/win64//vsim -c -do majority3.do
+
+Reading pref.tcl
+
+
+# 2023.3
+
+
+# do majority3.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+
+# Questa Intel FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+
+# Start time: 11:50:53 on Jan 19,2026
+
+# vlog -work work majority3.vo 
+
+# -- Compiling module majority3
+
+# 
+
+# Top level modules:
+# 	majority3
+
+# End time: 11:50:54 on Jan 19,2026, Elapsed time: 0:00:01
+
+# Errors: 0, Warnings: 0
+
+# Questa Intel FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+
+# Start time: 11:50:54 on Jan 19,2026
+# vlog -work work Waveform.vwf.vt 
+
+# -- Compiling module majority3_vlg_vec_tst
+
+# 
+
+# Top level modules:
+# 	majority3_vlg_vec_tst
+
+# End time: 11:50:54 on Jan 19,2026, Elapsed time: 0:00:00
+
+# Errors: 0, Warnings: 0
+
+# vsim -voptargs=""+acc"" -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.majority3_vlg_vec_tst 
+# Start time: 11:50:54 on Jan 19,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+
+# Loading work.majority3_vlg_vec_tst(fast)
+# Loading work.majority3(fast)
+# Loading cyclonev_ver.cyclonev_io_obuf(fast)
+# Loading cyclonev_ver.cyclonev_io_ibuf(fast)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast)
+
+# after#26
+
+# ** Note: $stop    : Waveform.vwf.vt(49)
+#    Time: 800 ns  Iteration: 0  Instance: /majority3_vlg_vec_tst
+
+# Break in Module majority3_vlg_vec_tst at Waveform.vwf.vt line 49
+
+# Stopped at Waveform.vwf.vt line 49
+
+# End time: 11:50:59 on Jan 19,2026, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/Win11/Desktop/Tutorial 1/Waveform.vwf...
+
+Reading C:/Users/Win11/Desktop/Tutorial 1/simulation/qsim/majority3.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/Users/Win11/Desktop/Tutorial 1/simulation/qsim/majority3_20260119115059.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

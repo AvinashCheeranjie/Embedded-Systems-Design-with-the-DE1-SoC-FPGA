@@ -1,0 +1,123 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\Win11\Desktop\Embedded Labs\Lab 4\lab4_restored\sopc_system.qsys" --block-symbol-file --output-directory="C:\Users\Win11\Desktop\Embedded Labs\Lab 4\lab4_restored\sopc_system" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading lab4_restored/sopc_system.qsys
+Progress: Reading input file
+Progress: Adding SDRAM_Controller_0 [SDRAM_Controller 1.0]
+Progress: Parameterizing module SDRAM_Controller_0
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding intel_niosv_g_0 [intel_niosv_g 1.1.0]
+Progress: Parameterizing module intel_niosv_g_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sys_sdram_pll_0 [altera_up_avalon_sys_sdram_pll 18.0]
+Progress: Parameterizing module sys_sdram_pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: sopc_system.intel_niosv_g_0: No peripheral regions have been defined.  If your design contains any peripherals such as UART, PIO, DMA, etc, they must be placed within a periperhal region.
+Warning: sopc_system.intel_niosv_g_0: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: sopc_system.intel_niosv_g_0: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: sopc_system.intel_niosv_g_0: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Warning: sopc_system.intel_niosv_g_0.hart: hart.cpu_ecc_status must be exported, or connected to a matching conduit.
+Info: sopc_system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: sopc_system.sys_sdram_pll_0: Refclk Freq: 50.0
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\Win11\Desktop\Embedded Labs\Lab 4\lab4_restored\sopc_system.qsys" --synthesis=VERILOG --output-directory="C:\Users\Win11\Desktop\Embedded Labs\Lab 4\lab4_restored\sopc_system\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading lab4_restored/sopc_system.qsys
+Progress: Reading input file
+Progress: Adding SDRAM_Controller_0 [SDRAM_Controller 1.0]
+Progress: Parameterizing module SDRAM_Controller_0
+Progress: Adding clk_0 [clock_source 23.1]
+Progress: Parameterizing module clk_0
+Progress: Adding intel_niosv_g_0 [intel_niosv_g 1.1.0]
+Progress: Parameterizing module intel_niosv_g_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 23.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 23.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sys_sdram_pll_0 [altera_up_avalon_sys_sdram_pll 18.0]
+Progress: Parameterizing module sys_sdram_pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: sopc_system.intel_niosv_g_0: No peripheral regions have been defined.  If your design contains any peripherals such as UART, PIO, DMA, etc, they must be placed within a periperhal region.
+Warning: sopc_system.intel_niosv_g_0: Properties (associatedClock) have been set on interface reset - in composed mode these are ignored
+Warning: sopc_system.intel_niosv_g_0: Properties (associatedClock,associatedReset) have been set on interface instruction_manager - in composed mode these are ignored
+Warning: sopc_system.intel_niosv_g_0: Properties (associatedClock,associatedReset) have been set on interface data_manager - in composed mode these are ignored
+Warning: sopc_system.intel_niosv_g_0.hart: hart.cpu_ecc_status must be exported, or connected to a matching conduit.
+Info: sopc_system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: sopc_system.sys_sdram_pll_0: Refclk Freq: 50.0
+Info: sopc_system: Generating sopc_system "sopc_system" for QUARTUS_SYNTH
+Info: SDRAM_Controller_0: "sopc_system" instantiated SDRAM_Controller "SDRAM_Controller_0"
+Info: intel_niosv_g_0: "sopc_system" instantiated intel_niosv_g "intel_niosv_g_0"
+Info: jtag_uart_0: Starting RTL generation for module 'sopc_system_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/23.1std/quartus/bin64/perl/lib -I C:/intelfpga/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga/23.1std/quartus/sopc_builder/bin -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=sopc_system_jtag_uart_0 --dir=C:/Users/Win11/AppData/Local/Temp/alt0531_4682560124668218697.dir/0005_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga/23.1std/quartus --verilog --config=C:/Users/Win11/AppData/Local/Temp/alt0531_4682560124668218697.dir/0005_jtag_uart_0_gen//sopc_system_jtag_uart_0_component_configuration.pl --do_build_sim=0}]
+Info: jtag_uart_0: Done RTL generation for module 'sopc_system_jtag_uart_0'
+Info: jtag_uart_0: "sopc_system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'sopc_system_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec cmd /c {set LC_ALL=C&& C:/intelfpga/23.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/23.1std/quartus/bin64/perl/lib -I C:/intelfpga/23.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga/23.1std/quartus/sopc_builder/bin -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/23.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=sopc_system_onchip_memory2_0 --dir=C:/Users/Win11/AppData/Local/Temp/alt0531_4682560124668218697.dir/0006_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga/23.1std/quartus --verilog --config=C:/Users/Win11/AppData/Local/Temp/alt0531_4682560124668218697.dir/0006_onchip_memory2_0_gen//sopc_system_onchip_memory2_0_component_configuration.pl --do_build_sim=0}]
+Info: onchip_memory2_0: Done RTL generation for module 'sopc_system_onchip_memory2_0'
+Info: onchip_memory2_0: "sopc_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: sys_sdram_pll_0: "sopc_system" instantiated altera_up_avalon_sys_sdram_pll "sys_sdram_pll_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "sopc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "sopc_system" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "sopc_system" instantiated altera_reset_controller "rst_controller"
+Info: hart: "intel_niosv_g_0" instantiated intel_niosv_g_unit "hart"
+Info: timer_module: "intel_niosv_g_0" instantiated intel_niosv_timer_msip "timer_module"
+Info: dbg_mod: "intel_niosv_g_0" instantiated intel_niosv_dbg_mod "dbg_mod"
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/niosv_ram.sv
+Info: irq_mapper: "intel_niosv_g_0" instantiated altera_irq_mapper "irq_mapper"
+Info: sys_pll: "sys_sdram_pll_0" instantiated altera_pll "sys_pll"
+Info: reset_from_locked: "sys_sdram_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: intel_niosv_g_0_data_manager_translator: "mm_interconnect_0" instantiated altera_merlin_axi_translator "intel_niosv_g_0_data_manager_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: intel_niosv_g_0_data_manager_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "intel_niosv_g_0_data_manager_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: intel_niosv_g_0_instruction_manager_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "intel_niosv_g_0_instruction_manager_wr_limiter"
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: jtag_uart_0_avalon_jtag_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "jtag_uart_0_avalon_jtag_slave_burst_adapter"
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: SDRAM_Controller_0_avalon_slave_0_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "SDRAM_Controller_0_avalon_slave_0_rsp_width_adapter"
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/sopc_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: sopc_system: Done "sopc_system" with 40 modules, 116 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

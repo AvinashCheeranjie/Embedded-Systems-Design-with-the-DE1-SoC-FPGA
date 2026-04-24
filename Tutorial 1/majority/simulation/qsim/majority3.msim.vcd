@@ -1,0 +1,92 @@
+$comment
+	File created using the following command:
+		vcd file majority3.msim.vcd -direction
+$end
+$date
+	Mon Jan 19 11:50:59 2026
+$end
+$version
+	Questa Intel FPGA Edition Version 2023.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module majority3_vlg_vec_tst $end
+$var reg 1 ! x1 $end
+$var reg 1 " x2 $end
+$var reg 1 # x3 $end
+$var wire 1 $ f $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + f~output_o $end
+$var wire 1 , x1~input_o $end
+$var wire 1 - x3~input_o $end
+$var wire 1 . x2~input_o $end
+$var wire 1 / f~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+0-
+0.
+0/
+$end
+#100000
+1#
+1-
+#200000
+1"
+0#
+1.
+0-
+#300000
+1#
+1-
+1/
+1+
+1$
+#400000
+1!
+0"
+0#
+1,
+0.
+0-
+0/
+0+
+0$
+#500000
+1#
+1-
+1/
+1+
+1$
+#600000
+1"
+0#
+1.
+0-
+#700000
+1#
+1-
+#800000

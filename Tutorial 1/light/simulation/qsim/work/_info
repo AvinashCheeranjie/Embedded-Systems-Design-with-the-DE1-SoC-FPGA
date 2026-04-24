@@ -1,0 +1,73 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/Users/Win11/Desktop/Embedded Labs/Tutorial 1/light/simulation/qsim
+T_opt
+!s110 1768896978
+V0YYBCYIWh5i0N[mK2b10R2
+04 17 4 work light_vlg_vec_tst fast 0
+=1-80304991972f-696f39d1-2f1-404c
+R1
+!s12b OEM100
+!s124 OEM25U2 
+o-quiet -auto_acc_if_foreign -work work -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vlight
+2light.vo
+!s110 1768896974
+!i10b 1
+!s100 9b;I[zh`1YX@kcPW^1ije1
+I_2Ll>BY;z?K>P4Q8dVIAO1
+R2
+w1768896970
+8light.vo
+Flight.vo
+!i122 2
+L0 32 117
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z6 !s108 1768896974.000000
+!s107 light.vo|
+!s90 -work|work|light.vo|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vlight_vlg_vec_tst
+2Waveform.vwf.vt
+!s110 1768896975
+!i10b 1
+!s100 ShmbDdcMT=MMe^bAT@@CL1
+IVc=aBF7@fn=QHh:kbS`5E0
+R2
+w1768896965
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 3
+L0 30 36
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R7
+R3

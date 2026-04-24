@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at lab2.v(32): object "WIN1" differs only in case from object "win1" in the same scope File: C:/Users/Win11/Desktop/Embedded Labs/Tutorial 2/refs/lab2_restored/lab2.v Line: 32
+Info (10281): Verilog HDL Declaration information at lab2.v(32): object "WIN2" differs only in case from object "win2" in the same scope File: C:/Users/Win11/Desktop/Embedded Labs/Tutorial 2/refs/lab2_restored/lab2.v Line: 32

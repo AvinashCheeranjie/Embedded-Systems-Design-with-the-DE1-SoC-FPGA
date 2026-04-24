@@ -1,0 +1,8 @@
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/build/Debug/CMakeFiles/app.elf.dir
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/build/Debug/CMakeFiles/create-objdump.dir
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/build/Debug/CMakeFiles/niosv-stack-report.dir
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/build/Debug/CMakeFiles/edit_cache.dir
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/build/Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/build/Debug/hal_bsp/CMakeFiles/hal2_bsp.dir
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/build/Debug/hal_bsp/CMakeFiles/edit_cache.dir
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/build/Debug/hal_bsp/CMakeFiles/rebuild_cache.dir

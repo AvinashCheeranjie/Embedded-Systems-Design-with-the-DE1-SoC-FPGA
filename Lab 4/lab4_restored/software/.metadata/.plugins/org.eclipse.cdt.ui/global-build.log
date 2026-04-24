@@ -1,0 +1,120 @@
+09:50:34 **** Clean-only build of configuration Debug for project app ****
+"C:\\intelFPGA\\23.1std\\riscfree\\build_tools\\bin\\make.exe" -j clean 
+09:50:35 **** Incremental Build of configuration Debug for project app ****
+"C:\\intelFPGA\\23.1std\\riscfree\\build_tools\\bin\\make.exe" -j all 
+[  1%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  2%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  3%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  4%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  6%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  8%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[  9%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[  7%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 13%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 14%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 10%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 12%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 15%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 16%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 17%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 18%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 20%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 20%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 21%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 23%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 24%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 25%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 26%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 27%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 28%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 29%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 30%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 31%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 34%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 36%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 37%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 38%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 39%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 40%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 41%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 42%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 43%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 45%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 46%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 47%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 48%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 50%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 49%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 52%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 53%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 54%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 56%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 57%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 58%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 59%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 60%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 61%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 62%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 63%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 64%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 67%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 68%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 69%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 65%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 70%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 71%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 72%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 73%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 74%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 75%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 76%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 78%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 79%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 81%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 81%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 85%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 82%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 84%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 83%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 86%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 87%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[ 89%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 90%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 91%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 94%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 95%] Linking C static library libhal2_bsp.a
+[ 95%] Built target hal2_bsp
+[ 96%] Building C object CMakeFiles/app.elf.dir/hello_world.c.obj
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/hello_world.c: In function 'main':
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/hello_world.c:88:60: warning: logical not is only applied to the left hand side of comparison [-Wlogical-not-parentheses]
+   88 |         if(!char_err_num && !short_err_num && !int_err_num == 1){
+      |                                                            ^~
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/hello_world.c:88:47: note: add parentheses around left hand side expression to silence this warning
+   88 |         if(!char_err_num && !short_err_num && !int_err_num == 1){
+      |                                               ^~~~~~~~~~~~
+      |                                               (           )
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/hello_world.c:25:14: warning: unused variable 'int_ptr' [-Wunused-variable]
+   25 |         int *int_ptr;
+      |              ^~~~~~~
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/hello_world.c:23:16: warning: unused variable 'short_ptr' [-Wunused-variable]
+   23 |         short *short_ptr;
+      |                ^~~~~~~~~
+C:/Users/Win11/Desktop/Embedded Labs/Lab 4/lab4_restored/software/app/hello_world.c:21:16: warning: unused variable 'char_ptr' [-Wunused-variable]
+   21 |         char * char_ptr;
+      |                ^~~~~~~~
+[ 97%] Linking C executable app.elf
+[ 97%] Built target app.elf
+[ 98%] Creating app.elf.objdump.
+[100%] Reporting memory available for stack + heap in app.elf.
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+app.elf
+ * 106.70 KB - Program size (code + initialized data).
+ * 14.32 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+[100%] Built target create-objdump

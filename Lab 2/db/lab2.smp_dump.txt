@@ -1,0 +1,7 @@
+
+State Machine - |lab2|code
+Name code.11 code.10 code.01 code.00 
+code.00 0 0 0 0 
+code.01 0 0 1 1 
+code.10 0 1 0 1 
+code.11 1 0 0 1 

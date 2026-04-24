@@ -1,0 +1,78 @@
+
+State Machine - |lights|nios_system:NiosV|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:intel_niosv_g_0_timer_sw_agent_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lights|nios_system:NiosV|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:leds_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lights|nios_system:NiosV|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:switches_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lights|nios_system:NiosV|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:onchip_memory2_0_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lights|nios_system:NiosV|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:intel_niosv_g_0_dm_agent_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lights|nios_system:NiosV|nios_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:jtag_uart_0_avalon_jtag_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lights|nios_system:NiosV|nios_system_intel_niosv_g_0:intel_niosv_g_0|nios_system_intel_niosv_g_0_hart:hart|niosv_g_core_nios_system_intel_niosv_g_0_hart:core_inst|niosv_g_dcache:lsu_inst|state
+Name state.CACHE_SCRUB state.AMO_WR state.AMO_OP state.AMO_RD_1 state.AMO_RD_0 state.UNCACHED state.CMO_EVICT state.CMO_WAIT state.EVICT_IDLE state.EVICT state.MISS_FILL state.CACHE_CHK state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.CACHE_CHK 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.MISS_FILL 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.EVICT 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.EVICT_IDLE 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.CMO_WAIT 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.CMO_EVICT 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.UNCACHED 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.AMO_RD_0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.AMO_RD_1 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.AMO_OP 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.AMO_WR 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.CACHE_SCRUB 1 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |lights|nios_system:NiosV|nios_system_intel_niosv_g_0:intel_niosv_g_0|nios_system_intel_niosv_g_0_hart:hart|niosv_g_core_nios_system_intel_niosv_g_0_hart:core_inst|niosv_g_instr_cache:icache_inst|state
+Name state.S_FETCH_TRANSFER state.S_FETCH_REQ state.S_WRITEBACK_TRANSFER state.S_WRITEBACK_REQ state.S_HIT state.S_FLUSH state.S_PREFETCH state.S_INIT 
+state.S_INIT 0 0 0 0 0 0 0 0 
+state.S_PREFETCH 0 0 0 0 0 0 1 1 
+state.S_FLUSH 0 0 0 0 0 1 0 1 
+state.S_HIT 0 0 0 0 1 0 0 1 
+state.S_WRITEBACK_REQ 0 0 0 1 0 0 0 1 
+state.S_WRITEBACK_TRANSFER 0 0 1 0 0 0 0 1 
+state.S_FETCH_REQ 0 1 0 0 0 0 0 1 
+state.S_FETCH_TRANSFER 1 0 0 0 0 0 0 1 
+
+State Machine - |lights|nios_system:NiosV|nios_system_intel_niosv_g_0:intel_niosv_g_0|niosv_dm_top:dbg_mod|niosv_debug_module:dm_inst|dm_state
+Name dm_state.EXE_PNDG dm_state.RESUMING dm_state.CMD_EXE dm_state.HALTED dm_state.HALTREQ dm_state.IDLE 
+dm_state.IDLE 0 0 0 0 0 0 
+dm_state.HALTREQ 0 0 0 0 1 1 
+dm_state.HALTED 0 0 0 1 0 1 
+dm_state.CMD_EXE 0 0 1 0 0 1 
+dm_state.RESUMING 0 1 0 0 0 1 
+dm_state.EXE_PNDG 1 0 0 0 0 1 

@@ -1,0 +1,60 @@
+|lab1part1
+clk => clk.IN2
+reset => reset.IN2
+enable => enable.IN2
+d => d.IN1
+sel0 => sel0.IN1
+sel1 => sel1.IN1
+data0 => data0.IN1
+data1 => data1.IN1
+data2 => data2.IN1
+data3 => data3.IN1
+mux_out <= four_to_one_mux:u_mux.data_out
+q <= d_ff_active_low_reset_enable:u_ff.q
+count_out[0] <= counter:u_counter.count_out
+count_out[1] <= counter:u_counter.count_out
+count_out[2] <= counter:u_counter.count_out
+count_out[3] <= counter:u_counter.count_out
+
+
+|lab1part1|d_ff_active_low_reset_enable:u_ff
+clk => q~reg0.CLK
+reset => q.OUTPUTSELECT
+enable => q.OUTPUTSELECT
+d => q.DATAB
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1part1|four_to_one_mux:u_mux
+data0 => data_out.DATAB
+data1 => data_out.DATAB
+data2 => data_out.DATAB
+data3 => data_out.DATAA
+sel0 => data_out.IN0
+sel0 => data_out.IN0
+sel0 => data_out.IN0
+sel1 => data_out.IN1
+sel1 => data_out.IN1
+sel1 => data_out.IN1
+data_out <= data_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1part1|counter:u_counter
+clk => count_out[0]~reg0.CLK
+clk => count_out[1]~reg0.CLK
+clk => count_out[2]~reg0.CLK
+clk => count_out[3]~reg0.CLK
+reset => count_out.OUTPUTSELECT
+reset => count_out.OUTPUTSELECT
+reset => count_out.OUTPUTSELECT
+reset => count_out.OUTPUTSELECT
+enable => count_out.OUTPUTSELECT
+enable => count_out.OUTPUTSELECT
+enable => count_out.OUTPUTSELECT
+enable => count_out.OUTPUTSELECT
+count_out[0] <= count_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_out[1] <= count_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_out[2] <= count_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count_out[3] <= count_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

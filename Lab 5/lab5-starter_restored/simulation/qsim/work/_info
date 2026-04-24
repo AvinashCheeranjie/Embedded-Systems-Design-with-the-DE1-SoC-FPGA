@@ -1,0 +1,264 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+Z2 !s12c _opt2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+!s12c _opt1
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 dC:/Users/Win11/Desktop/Embedded Labs/Lab 5/lab5-starter_restored/simulation/qsim
+T_opt
+!s110 1774297056
+Vb`jadYlPiSJ:G;=VR<EDS3
+04 19 4 work decoder_vlg_vec_tst fast 0
+=1-80304991972f-69c19fdf-382-3254
+R1
+Z4 !s12b OEM100
+Z5 !s124 OEM25U2 
+Z6 o-quiet -auto_acc_if_foreign -work work -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2023.3;77
+R3
+T_opt1
+!s110 1774279389
+VEO>;NAHUj8ieIl09TkKSm0
+04 24 4 work branch_logic_vlg_vec_tst fast 0
+=1-80304991972f-69c15adc-230-5560
+R1
+R4
+R5
+R6
+R7
+n@_opt1
+R8
+R3
+T_opt2
+!s110 1774282265
+VU6FkWgPfbliLD0edQ@<432
+04 14 4 work pc_vlg_vec_tst fast 0
+=1-80304991972f-69c16618-2b4-576c
+R1
+R4
+R5
+R6
+R7
+n@_opt2
+R8
+R3
+valu
+Z9 2lab5.vo
+Z10 !s110 1774277858
+!i10b 1
+!s100 BWdXEm@Q:lk]Y2bnV?gfR3
+I^F7^?INfzXSjA>iWSDH=[0
+R3
+w1774277856
+Z11 8lab5.vo
+Z12 Flab5.vo
+!i122 9
+L0 32 884
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z15 !s108 1774277858.000000
+Z16 !s107 lab5.vo|
+Z17 !s90 -work|work|lab5.vo|
+!i113 0
+Z18 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R7
+valu_vlg_vec_tst
+Z19 2Waveform.vwf.vt
+R10
+!i10b 1
+!s100 lz^`92z^<RjnC78D9m1<C0
+IHA8^kWmg^I_Pi_L[2O61P1
+R3
+w1774277853
+Z20 8Waveform.vwf.vt
+Z21 FWaveform.vwf.vt
+!i122 10
+L0 30 153
+R13
+R14
+r1
+!s85 0
+31
+R15
+Z22 !s107 Waveform.vwf.vt|
+Z23 !s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R18
+R7
+vbranch_logic
+R9
+!s110 1774279387
+!i10b 1
+!s100 08^_AO^aHo]kmj2zX:kP51
+IiZ:69UZOmgeN=faLJz7SP0
+R3
+w1774279384
+R11
+R12
+!i122 11
+L0 32 218
+R13
+R14
+r1
+!s85 0
+31
+!s108 1774279387.000000
+R16
+R17
+!i113 0
+R18
+R7
+vbranch_logic_vlg_vec_tst
+R19
+!s110 1774295926
+!i10b 1
+!s100 1Ac;CPdKhWM?hZ=UPeQ[m2
+In]k=kdI>9J3BBM:K_A9dU0
+R3
+w1774279232
+R20
+R21
+!i122 32
+L0 30 72
+R13
+R14
+r1
+!s85 0
+31
+!s108 1774295926.000000
+R22
+R23
+!i113 0
+R18
+R7
+vdecoder
+R9
+Z24 !s110 1774297117
+!i10b 1
+!s100 U7oRP=Rf=GgPFT43LSk3T3
+ID4B34VI>^z:LBMCDYgo3N2
+R3
+w1774297114
+R11
+R12
+!i122 41
+L0 32 651
+R13
+R14
+r1
+!s85 0
+31
+Z25 !s108 1774297117.000000
+R16
+R17
+!i113 0
+R18
+R7
+vdecoder_vlg_vec_tst
+2decoder.vwf.vt
+R24
+!i10b 1
+!s100 N5lLThYAhXGPHG5z>B<Y10
+I>W2Km_]eQ03U2@KhD6_j>3
+R3
+w1774297112
+8decoder.vwf.vt
+Fdecoder.vwf.vt
+!i122 42
+L0 30 150
+R13
+R14
+r1
+!s85 0
+31
+R25
+!s107 decoder.vwf.vt|
+!s90 -work|work|decoder.vwf.vt|
+!i113 0
+R18
+R7
+vpc
+R9
+Z26 !s110 1774282263
+!i10b 1
+!s100 Fh;<Q=U]lhYzYo`84m3TK1
+I=z?Mlgh<<MiICAQK6JOPM0
+R3
+w1774282261
+R11
+R12
+!i122 29
+L0 32 761
+R13
+R14
+r1
+!s85 0
+31
+Z27 !s108 1774282263.000000
+R16
+R17
+!i113 0
+R18
+R7
+vpc_vlg_vec_tst
+2pc.vwf.vt
+R26
+!i10b 1
+!s100 1ZPYBCdH;o4f1ciSQM:CN1
+I0AT=a3OG>OmX:V<3^i;bA1
+R3
+w1774282258
+8pc.vwf.vt
+Fpc.vwf.vt
+!i122 30
+L0 30 135
+R13
+R14
+r1
+!s85 0
+31
+R27
+!s107 pc.vwf.vt|
+!s90 -work|work|pc.vwf.vt|
+!i113 0
+R18
+R7
