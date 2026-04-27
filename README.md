@@ -1,4 +1,5 @@
 # MECHTRON 3TB4: Embedded Systems Design II
+## Overview
 The hardware used was the Altera DE1 SoC Development Kit. The FPGA was programmed in Verilog HDL using the Quartus Prime software environment. The following 5 labs were performed:
 
 - Lab 1: Describing and Simulating Circuits using Verilog HDL
